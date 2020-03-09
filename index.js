@@ -6,7 +6,7 @@ var fs = require('fs'),
     util = require('util'),
     B2 = require('backblaze-b2'),
     BaseStore = require('ghost-storage-base'),
-    request = Promise.promisify(require("request")),
+    superagent = require('superagent'),
     readFileAsync = Promise.promisify(fs.readFile);
 
 class Store extends BaseStore {
@@ -33,7 +33,7 @@ class Store extends BaseStore {
 
     exists(filename, targetDir) {
         const filepath = path.join(targetDir || this.getTargetDir(), filename);
-        return request(this.getUrl(filepath))
+        return superagent.get(this.getUrl(filepath))
             .then(res => (res.statusCode === 200))
             .catch(() => false);
     }

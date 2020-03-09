@@ -51,10 +51,10 @@ If you don't have an account, you can create your account [here](https://www.bac
 Open your bucket in Backblaze, upload an image, click "i" button to see the image details. From there, check on the Friendly url section, that is your backblaze url. It varies from your settings. If you put subFolder above then the url should be with the subfolder.
 
 e.g with subfolder
->https://f002.backblazeb2.com/file/atestbucket/
+>https://f002.backblazeb2.com/file/atestbucket
 
 e.g without subfolder
->https://f000.backblazeb2.com/file/
+>https://f000.backblazeb2.com/file
 ![url](https://i.imgur.com/OiG6pjz.jpg)
 
 You'll need this else if you upload the same image name, it will overwrite the other image with same name. Read below for info if you set this up correctly.

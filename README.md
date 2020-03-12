@@ -1,6 +1,7 @@
 #  Backblaze(B2) - Ghost Storage 
 
-This library works with current version of Ghost 3.x.x
+This library partially working with current version of Ghost 3.x.x. Gallery is broken. 
+I recommend you to check my other [fork](https://github.com/anazhd/ghost-storage-b2) from Gnalck original code for Ghost 3.x.x 
 
 B2 Ghost Storage allows ghost to save images to Backblaze B2, with options of creating subfolders in their B2 buckets and if the files are saved using /Year/Month/Filename.png or just filename.png
 
